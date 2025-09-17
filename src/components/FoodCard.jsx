@@ -1,18 +1,16 @@
-import React from 'react'
-import Dosa from "../assets/Dosa.jpg"
+import React from "react";
+import { FOOD_URL } from "../utils/constants";
 
-const FoodCard = () => {
+const FoodCard = ({ foodData }) => {
   return (
-    <div >
-      <div>
-        <img
-          className="w-50 h-50 mx-auto object-contain cursor-pointer"
-          alt="food"
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"
-        />
-      </div>
+    <div className="flex-shrink-0 w-40 h-40 flex flex-col items-center justify-center cursor-pointer mx-2 my-4">
+      <img
+        src={FOOD_URL + foodData.imageId}
+        alt={foodData.accessibility?.altText || "Food Item"}
+        className="w-full h-full object-cover rounded-lg shadow-md"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default FoodCard
+export default FoodCard;
