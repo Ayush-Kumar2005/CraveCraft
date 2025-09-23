@@ -3,6 +3,7 @@ import FoodCard from "./FoodCard";
 import RestaurantCard from "./RestaurantCard";
 import { FaArrowRight, FaArrowLeft, FaTimes, FaSearch   } from "react-icons/fa";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Restaurants = () => {
   const [listOfFoods, setListOfFoods] = useState([]);
@@ -141,13 +142,17 @@ const Restaurants = () => {
         <h1 className="text-xl font-bold">
           Restaurants with online food delivery in Bangalore
         </h1>
+
         <div className="flex flex-wrap gap-6 mt-4">
           {filteredRestaurants.length > 0 ? (
             filteredRestaurants.map((restaurant) => (
-              <RestaurantCard
+              <Link
                 key={restaurant.info.id}
-                resData={restaurant}
-              />
+                to={`/restaurant/${restaurant.info.id}`}
+                className="block hover:scale-[1.02] transition-transform duration-200"
+              >
+                <RestaurantCard resData={restaurant} />
+              </Link>
             ))
           ) : (
             <p className="text-gray-500">No restaurants found</p>
