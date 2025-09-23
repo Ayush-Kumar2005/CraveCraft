@@ -6,11 +6,13 @@ const Header = () => {
     <header className="flex justify-between mr-8 items-center py-4">
       {/* Logo */}
       <div>
-        <img
-          alt="logo"
-          className="h-24 w-32"
-          src="https://static.vecteezy.com/system/resources/previews/013/195/659/original/restaurant-delicious-food-logo-badge-line-style-design-with-smile-face-fork-and-spoon-icon-concept-for-catering-food-culinary-logo-design-vector.jpg"
-        />
+        <Link to="/">
+          <img
+            alt="logo"
+            className="h-24 w-32"
+            src="https://static.vecteezy.com/system/resources/previews/013/195/659/original/restaurant-delicious-food-logo-badge-line-style-design-with-smile-face-fork-and-spoon-icon-concept-for-catering-food-culinary-logo-design-vector.jpg"
+          />
+        </Link>
       </div>
 
       {/* Navigation */}
@@ -32,6 +34,12 @@ const Header = () => {
           className="px-4 rounded-full hover:bg-[#FC8A06] cursor-pointer"
         >
           Cart
+        </Link>
+        <Link
+          to="/contact"
+          className="px-4 rounded-full hover:bg-[#FC8A06] cursor-pointer"
+        >
+          Contact us
         </Link>
         <Link
           to="/login"
