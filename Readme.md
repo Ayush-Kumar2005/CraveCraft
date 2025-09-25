@@ -50,3 +50,20 @@ CraveCraft aims to simulate a real-world food delivery app like Swiggy/Zomato bu
 ---
 
 ## 📂 Project Structure (example)
+
+src/
+│── components/
+│ ├── Header.jsx
+│ ├── Restaurants.jsx
+│ ├── RestaurantCard.jsx
+│ ├── RestaurantMenu.jsx
+│ ├── FoodCard.jsx
+│ ├── Cart.jsx
+│ ├── Login.jsx
+│ ├── Signup.jsx
+│ ├── Contact.jsx
+│ ├── Error.jsx
+│ └── Shimmer.jsx
+│
+│── index.css
+│── main.jsx
