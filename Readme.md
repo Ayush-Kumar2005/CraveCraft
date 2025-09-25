@@ -3,7 +3,7 @@
 ![React](https://img.shields.io/badge/React-18-blue?logo=react)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Under%20Development-orange)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+
 
 ---
 
