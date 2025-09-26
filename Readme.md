@@ -66,5 +66,10 @@ src/
 │   ├── Error.jsx
 │   └── Shimmer.jsx
 │
-├── index.css
+├── utils/
+│   └── constants.js
+│
+├── styles/
+│   └── index.css
+│
 └── main.jsx

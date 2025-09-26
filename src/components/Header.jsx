@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
           <img
             alt="logo"
             className="h-24 w-32"
-            src="https://static.vecteezy.com/system/resources/previews/013/195/659/original/restaurant-delicious-food-logo-badge-line-style-design-with-smile-face-fork-and-spoon-icon-concept-for-catering-food-culinary-logo-design-vector.jpg"
+            src={LOGO_URL}
           />
         </Link>
       </div>
