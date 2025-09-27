@@ -1,6 +1,5 @@
 import React from "react";
 import { IMG_URL } from "../utils/constants";
-import Dosa from "../assets/Dosa.jpg"
 import { FaStar , FaCircle} from "react-icons/fa";
 const RestaurantCard=(props)=>{
     const {resData}=props;
